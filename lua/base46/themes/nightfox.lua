@@ -54,6 +54,4 @@ M.base_16 = {
 
 vim.opt.bg = "dark"
 
-M = require("base46").override_theme(M, "nightfox")
-
 return M

@@ -1,48 +1,47 @@
-local colors = require("base46").get_theme_tb "base_30"
+local hls = function(colors)
+	local highlights = {}
 
-local M = {
-  NvimTreeWinSeparator = {
-    fg = colors.one_bg2,
-    bg = "NONE",
-  },
+	highlights.NvimTreeWinSeparator = {
+		fg = colors.one_bg2,
+		bg = "NONE",
+	}
 
-  TelescopeResultsTitle = {
-    fg = colors.black,
-    bg = colors.blue,
-  },
-}
+	highlights.TelescopeResultsTitle = {
+		fg = colors.black,
+		bg = colors.blue,
+	}
 
--- for hl groups which need bg = "NONE" only!
-local hl_groups = {
-  "NormalFloat",
-  "Normal",
-  "Folded",
-  "NvimTreeNormal",
-  "NvimTreeNormalNC",
-  "NvimTreeCursorLine",
-  "TelescopeNormal",
-  "TelescopePrompt",
-  "TelescopeResults",
-  "TelescopePromptNormal",
-  "TelescopePromptPrefix",
-  "CursorLine",
-  "Pmenu",
-}
+	highlights.TelescopeBorder = {
+		fg = colors.grey,
+		bg = "NONE",
+	}
 
-for _, groups in ipairs(hl_groups) do
-  M[groups] = {
-    bg = "NONE",
-  }
+	highlights.TelescopePromptBorder = {
+		fg = colors.grey,
+		bg = "NONE",
+	}
+	-- for hl groups which need bg = "NONE" only!
+	local bg_none_groups = {
+		"NormalFloat",
+		"Normal",
+		"Folded",
+		"NvimTreeNormal",
+		"NvimTreeNormalNC",
+		"NvimTreeCursorLine",
+		"TelescopeNormal",
+		"TelescopePrompt",
+		"TelescopeResults",
+		"TelescopePromptNormal",
+		"TelescopePromptPrefix",
+		"CursorLine",
+		"Pmenu",
+	}
+
+	for _, groups in ipairs(bg_none_groups) do
+		highlights[groups] = {
+			bg = "NONE",
+		}
+	end
+	return highlights
 end
-
-M.TelescopeBorder = {
-  fg = colors.grey,
-  bg = "NONE",
-}
-
-M.TelescopePromptBorder = {
-  fg = colors.grey,
-  bg = "NONE",
-}
-
-return M
+return hls

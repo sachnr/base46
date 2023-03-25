@@ -66,6 +66,4 @@ M.polish_hl = {
   St_pos_text = { fg = M.base_30.white },
 }
 
-M = require("base46").override_theme(M, "one_light")
-
 return M
