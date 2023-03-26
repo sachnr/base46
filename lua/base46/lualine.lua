@@ -4,16 +4,16 @@ M.getTheme = function(colors, config)
 	if config.simple_lualine then
 		return {
 			normal = {
-				a = { fg = colors.white, bg = colors.black, gui = "bold" },
+				a = { fg = colors.white, bg = colors.blue, gui = "bold" },
 				b = { fg = colors.white, bg = colors.black },
 				c = { fg = colors.white, bg = colors.black },
 			},
-			insert = { a = { fg = colors.white, bg = colors.black, gui = "bold" } },
-			visual = { a = { fg = colors.white, bg = colors.black, gui = "bold" } },
-			command = { a = { fg = colors.white, bg = colors.black, gui = "bold" } },
-			replace = { a = { fg = colors.white, bg = colors.black, gui = "bold" } },
+			insert = { a = { fg = colors.dark_purple, bg = colors.black, gui = "bold" } },
+			visual = { a = { fg = colors.cyan, bg = colors.black, gui = "bold" } },
+			command = { a = { fg = colors.green, bg = colors.black, gui = "bold" } },
+			replace = { a = { fg = colors.orange, bg = colors.black, gui = "bold" } },
 			inactive = {
-				a = { fg = colors.white, bg = colors.black },
+				a = { fg = colors.one_bg3, bg = colors.black },
 				b = { fg = colors.white, bg = colors.black },
 				c = { fg = colors.white, bg = colors.black },
 			},
