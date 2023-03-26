@@ -4,7 +4,7 @@ M.getTheme = function(colors, config)
 	if config.simple_lualine then
 		return {
 			normal = {
-				a = { fg = colors.white, bg = colors.blue, gui = "bold" },
+				a = { fg = colors.blue, bg = colors.black, gui = "bold" },
 				b = { fg = colors.white, bg = colors.black },
 				c = { fg = colors.white, bg = colors.black },
 			},
