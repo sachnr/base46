@@ -4,9 +4,9 @@ M.options = {}
 
 local defaults = {
 	transparency = false,
-	term_colors = false,
+	term_colors = true,
 	italics = false,
-	bold = false,
+	bold = true,
 	strikethrough = true,
 	underline = true,
 	simple_lualine = false,

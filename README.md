@@ -30,14 +30,13 @@ require("lualine").setup({
 
 ```lua
 require("base46").setup({
-  transparency = false,
-  term_colors = false,
-  italics = false,
-  bold = false,
-  strikethrough = true,
-  underline = true,
-  -- use true for simple lualine with white fg
-  -- or false for more colorful lualine
-  simple_lualine = true
+	transparency = false,
+	term_colors = true,
+	italics = false,
+	bold = true,
+	strikethrough = true,
+	underline = true,
+    -- false: colorful lualine, true: simple
+	simple_lualine = false,
 })
 ```
