@@ -29,7 +29,7 @@ M.load = function(color)
 	if present then
 		local colors = vim.tbl_deep_extend("force", {}, theme["base_16"], theme["base_30"])
 		local polish_hl = theme["polish_hl"]
-		local hls = highlights.get_highlights(config, colors, polish_hl)
+		local hls = highlights.get_highlights(config.options, colors, polish_hl)
 		highlights.load_highlights(hls)
 	else
 		error("Theme not found")
