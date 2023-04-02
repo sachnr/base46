@@ -32,7 +32,7 @@ require("lualine").setup({
 require("base46").setup({
 	transparency = false,
 	term_colors = true,
-	italics = false,
+	italic = false,
 	bold = true,
 	strikethrough = true,
 	underline = true,

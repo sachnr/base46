@@ -6,7 +6,7 @@ M.getTheme = function(colors, config)
 			normal = {
 				a = { fg = colors.blue, bg = colors.black, gui = "bold" },
 				b = { fg = colors.white, bg = colors.black },
-				c = { fg = colors.white, bg = colors.black },
+				c = { fg = colors.light_grey, bg = colors.black },
 			},
 			insert = { a = { fg = colors.dark_purple, bg = colors.black, gui = "bold" } },
 			visual = { a = { fg = colors.cyan, bg = colors.black, gui = "bold" } },
@@ -15,7 +15,7 @@ M.getTheme = function(colors, config)
 			inactive = {
 				a = { fg = colors.one_bg3, bg = colors.black },
 				b = { fg = colors.white, bg = colors.black },
-				c = { fg = colors.white, bg = colors.black },
+				c = { fg = colors.light_grey, bg = colors.black },
 			},
 		}
 	end

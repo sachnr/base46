@@ -19,7 +19,7 @@ local hls = function(colors, opts)
 		FoldColumn = { fg = colors.base0C, bg = colors.base00 },
 		Folded = { fg = colors.base03, bg = colors.base01 },
 		IncSearch = { fg = colors.base01, bg = colors.base0B },
-		Italic = { italic = opts.italics },
+		Italic = { italic = opts.italic },
 		Macro = { fg = colors.base08 },
 		MatchWord = { bg = colors.one_bg, fg = colors.white },
 		MatchParen = { bg = colors.one_bg, fg = colors.base09 },

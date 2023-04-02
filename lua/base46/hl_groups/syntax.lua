@@ -2,7 +2,7 @@ local hls = function(colors, opts)
 	return {
 		Boolean = { fg = colors.base09 },
 		Character = { fg = colors.base08 },
-		Comment = { fg = colors.base03 },
+		Comment = { fg = colors.base03, italic = opts.italic },
 		Conditional = { fg = colors.base0E },
 		Constant = { fg = colors.base09 },
 		Define = { fg = colors.base0E },
