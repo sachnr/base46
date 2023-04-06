@@ -37,6 +37,8 @@ local hls = function(colors)
 		NeoTreeWindowsHidden = { fg = colors.light_grey },
 		NeoTreeTabActive = { fg = colors.black, bg = colors.pmenu_bg, bold = true },
 		NeoTreeTabInactive = { fg = colors.light_grey, bg = colors.black },
+		NeoTreeTabSeparatorInactive = { fg = colors.light_grey, bg = "NONE" },
+		NeoTreeTabSeparatorActive = { fg = colors.pmenu_bg, bg = colors.pmenu_bg },
 	}
 end
 return hls
