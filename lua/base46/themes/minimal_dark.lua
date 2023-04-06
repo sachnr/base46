@@ -54,8 +54,9 @@ M.base_16 = {
 
 M.polish_hl = {
 	FloatBorder = { fg = M.base_30.grey },
-	PmenuSel = { bg = "#212121", fg = "NONE" },
+	PmenuSel = { bg = "#7E97AB", fg = "#1a1a1a" },
 	Pmenu = { fg = "#E1E1E1", bg = "#1a1a1a" },
+	CmpItemMenu = { fg = "#AFAFAF", bg = "NONE", italic = true },
 	PmenuSbar = { bg = "#1a1a1a" },
 	PmenuThumb = { bg = "#7E97AB" },
 	CmpDocumentation = { fg = "#E1E1E1", bg = "#1a1a1a" },

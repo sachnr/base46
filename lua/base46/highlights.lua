@@ -32,6 +32,7 @@ M.get_highlights = function(opts, colors, polish_hl)
 end
 
 M.load_highlights = function(highlights)
+    vim.cmd("hi clear")
 	for hl, col in pairs(highlights) do
 		vim.api.nvim_set_hl(0, hl, col)
 	end
