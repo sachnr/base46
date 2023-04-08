@@ -3,7 +3,7 @@ local M = {}
 M.set = function(colors)
 	-- dark
 	vim.g.terminal_color_0 = colors.black
-	vim.g.terminal_color_8 = colors.one_bg
+	vim.g.terminal_color_8 = colors.light_grey
 
 	-- light
 	vim.g.terminal_color_7 = colors.base05

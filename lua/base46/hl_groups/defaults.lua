@@ -9,7 +9,7 @@ local hls = function(colors, opts)
 		NormalFloat = { bg = colors.darker_black },
 
 		-- Defaults
-		Normal = { fg = colors.base05, bg = colors.base00 },
+		Normal = { fg = colors.base05, bg = colors.black },
 		Bold = { bold = opts.bold },
 		Debug = { fg = colors.base08 },
 		Directory = { fg = colors.base0D },
