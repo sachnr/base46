@@ -36,7 +36,6 @@ require("base46").setup({
 	bold = true,
 	strikethrough = true,
 	underline = true,
-    -- false: colorful lualine, true: simple
 	simple_lualine = false,
 })
 ```

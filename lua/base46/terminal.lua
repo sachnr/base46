@@ -2,7 +2,7 @@ local M = {}
 
 M.set = function(colors)
 	-- dark
-	vim.g.terminal_color_0 = colors.black
+	vim.g.terminal_color_0 = colors.darker_black
 	vim.g.terminal_color_8 = colors.light_grey
 
 	-- light

@@ -52,4 +52,8 @@ M.base_16 = {
 	base0F = "#e5e5e5",
 }
 
+M.polish_hl = {
+	FloatBorder = { fg = M.base_30.dark_purple },
+}
+
 return M
