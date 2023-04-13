@@ -1,5 +1,7 @@
 local hls = function(colors, opts)
 	return {
+		TreesitterContext = { link = "CursorLine" },
+		TreesitterContextLineNumber = { fg = colors.white },
 		["@annotation"] = { fg = colors.base0F },
 		["@attribute"] = { fg = colors.base0A },
 		["@boolean"] = { fg = colors.base09 },
