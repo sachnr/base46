@@ -1,9 +1,5 @@
 local path = require("base46.utils.path")
 
-local M = {}
-
-M.colors = {}
-
 vim.api.nvim_create_user_command("Base46", function(opts)
 	vim.cmd("colorscheme " .. opts.args)
 	path.cache_theme_data(opts.args)
@@ -17,6 +13,7 @@ end, {
 })
 
 local group = vim.api.nvim_create_augroup("base46", { clear = true })
+
 vim.api.nvim_create_autocmd("VimEnter", {
 	group = group,
 	callback = function()
@@ -28,5 +25,3 @@ vim.api.nvim_create_autocmd("VimEnter", {
 		end
 	end,
 })
-
-return M

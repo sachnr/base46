@@ -1,6 +1,5 @@
 local config = require("base46.config")
 local highlights = require("base46.highlights")
-require("base46.plugin")
 
 function _G.put(...)
 	local objects = {}
