@@ -65,7 +65,8 @@ M.polish_hl = {
 	["@keyword.function"] = { fg = M.base_16.base08 },
 	["@keyword.operator"] = { fg = M.base_16.base09 },
 	["@keyword.return"] = { fg = M.base_16.base08 },
-	["@method.call"] = { fg = M.base_16.base07 },
+	["@method"] = { fg = M.base_16.base0B },
+	["@method.call"] = { fg = M.base_16.base0B },
 	["@punctuation.bracket"] = { fg = M.base_16.base07 },
 	["@conditional"] = { fg = M.base_16.base08 },
 	["@function"] = { fg = M.base_16.base0B },
@@ -75,6 +76,7 @@ M.polish_hl = {
 	["@type.builtin"] = { fg = M.base_16.base0A },
 	["@include"] = { fg = M.base_16.base08 },
 	["@namespace"] = { fg = M.base_16.base0A },
+	["Macro"] = { fg = M.base_16.base08 },
 }
 
 return M
