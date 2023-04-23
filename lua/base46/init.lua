@@ -1,24 +1,17 @@
 local config = require("base46.config")
 local highlights = require("base46.highlights")
 
-function _G.put(...)
-	local objects = {}
-	for i = 1, select("#", ...) do
-		local v = select(i, ...)
-		table.insert(objects, vim.inspect(v))
-	end
-
-	print(table.concat(objects, "\n"))
-	return ...
-end
-
 local M = {}
 
 M.setup = config.setup
 
 M.lualine = function()
 	local theme = require("base46.themes." .. vim.g.base46)["base_30"]
-	return require("base46.lualine").getTheme(theme, config.options)
+	if config.options.simple_lualine then
+		return require("base46.lualine").style_1(theme)
+	else
+		return require("base46.lualine").style_2(theme)
+	end
 end
 
 M.load = function(color)

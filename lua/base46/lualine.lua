@@ -1,24 +1,25 @@
 local M = {}
 
-M.getTheme = function(colors, config)
-	if config.simple_lualine then
-		return {
-			normal = {
-				a = { fg = colors.blue, bg = colors.statusline_bg, gui = "bold" },
-				b = { fg = colors.white, bg = colors.statusline_bg },
-				c = { fg = colors.light_grey, bg = colors.statusline_bg },
-			},
-			insert = { a = { fg = colors.dark_purple, bg = colors.statusline_bg, gui = "bold" } },
-			visual = { a = { fg = colors.cyan, bg = colors.statusline_bg, gui = "bold" } },
-			command = { a = { fg = colors.green, bg = colors.statusline_bg, gui = "bold" } },
-			replace = { a = { fg = colors.orange, bg = colors.statusline_bg, gui = "bold" } },
-			inactive = {
-				a = { fg = colors.one_bg3, bg = colors.statusline_bg },
-				b = { fg = colors.white, bg = colors.statusline_bg },
-				c = { fg = colors.light_grey, bg = colors.statusline_bg },
-			},
-		}
-	end
+M.style_1 = function(colors)
+	return {
+		normal = {
+			a = { fg = colors.blue, bg = colors.statusline_bg, gui = "bold" },
+			b = { fg = colors.white, bg = colors.statusline_bg },
+			c = { fg = colors.light_grey, bg = colors.statusline_bg },
+		},
+		insert = { a = { fg = colors.dark_purple, bg = colors.statusline_bg, gui = "bold" } },
+		visual = { a = { fg = colors.cyan, bg = colors.statusline_bg, gui = "bold" } },
+		command = { a = { fg = colors.green, bg = colors.statusline_bg, gui = "bold" } },
+		replace = { a = { fg = colors.orange, bg = colors.statusline_bg, gui = "bold" } },
+		inactive = {
+			a = { fg = colors.one_bg3, bg = colors.statusline_bg },
+			b = { fg = colors.white, bg = colors.statusline_bg },
+			c = { fg = colors.light_grey, bg = colors.statusline_bg },
+		},
+	}
+end
+
+M.style_2 = function(colors)
 	return {
 		normal = {
 			a = { bg = colors.blue, fg = colors.black, gui = "bold" },
