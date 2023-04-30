@@ -1,5 +1,7 @@
+local generate_gradient = require("base46.utils.color").compute_gradient
 local hls = function(colors)
-	return {
+	local gradient = generate_gradient(colors.blue, colors.orange, 20)
+	local table = {
 		AlphaHeader = { fg = colors.grey_fg },
 		AlphaButtons = { fg = colors.light_grey },
 
@@ -14,6 +16,10 @@ local hls = function(colors)
 		DashboardFiles = { fg = colors.white },
 		DashboardShotCutIcon = { fg = colors.red },
 	}
+	for i, value in ipairs(gradient) do
+		table["AlphaGradient" .. i] = { fg = value }
+	end
+	return table
 end
 
 return hls
