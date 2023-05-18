@@ -30,12 +30,13 @@ require("lualine").setup({
 
 ```lua
 require("base46").setup({
-	transparency = false,
-	term_colors = true,
-	italic = false,
-	bold = true,
-	strikethrough = true,
-	underline = true,
-	simple_lualine = false,
+  transparency = false,
+  term_colors = true,
+  italic = false,
+  bold = true,
+  strikethrough = true,
+  underline = true,
+  simple_lualine = false,
+  bold_vertsplit = false,
 })
 ```

@@ -35,10 +35,10 @@ local hls = function(colors)
 		NeoTreeRootName = { fg = colors.white, bold = true, italic = false },
 		NeoTreeSymbolicLinkTarget = { fg = colors.vibrant_green, italic = true },
 		NeoTreeWindowsHidden = { fg = colors.light_grey },
-		NeoTreeTabActive = { fg = colors.black, bg = colors.pmenu_bg, bold = true },
+		NeoTreeTabActive = { fg = colors.white, bg = colors.black, bold = true },
 		NeoTreeTabInactive = { fg = colors.light_grey, bg = colors.black },
-		NeoTreeTabSeparatorInactive = { fg = colors.light_grey, bg = "NONE" },
-		NeoTreeTabSeparatorActive = { fg = colors.pmenu_bg, bg = colors.pmenu_bg },
+		NeoTreeTabSeparatorInactive = { fg = colors.black, bg = colors.black },
+		NeoTreeTabSeparatorActive = { fg = colors.black, bg = colors.black },
 	}
 end
 return hls

@@ -25,7 +25,7 @@ M.base_30 = {
 	purple = "#c4a7e7",
 	dark_purple = "#bb9ede",
 	teal = "#6aadc8",
-	orange = "#f6c177",
+	orange = "#ebbcba",
 	cyan = "#a3d6df",
 	statusline_bg = "#201e2b",
 	lightbg = "#2d2b38",
@@ -53,7 +53,15 @@ M.base_16 = {
 }
 
 M.polish_hl = {
-	FloatBorder = { fg = M.base_30.dark_purple },
+	FloatBorder = { fg = M.base_30.orange },
+
+	-- neotree
+	NeoTreeDirectoryIcon = { fg = M.base_30.orange },
+	NeoTreeFileIcon = { fg = M.base_30.orange },
+	NeoTreeExpander = { fg = M.base_30.orange },
+
+	-- Pmenu
+	PmenuSel = { bg = M.base_30.orange, fg = M.base_30.black },
 }
 
 return M

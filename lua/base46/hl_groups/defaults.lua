@@ -2,11 +2,11 @@ local hls = function(colors, opts)
 	return {
 		healthSuccess = { bg = colors.green, fg = colors.black },
 		NvimInternalError = { fg = colors.red },
-		WinSeparator = { fg = colors.line },
+		WinSeparator = { fg = colors.line, bg = (opts.bold_vertsplit and colors.line) or "None" },
 
 		-- floating windows
 		FloatBorder = { fg = colors.blue },
-		NormalFloat = { bg = colors.darker_black },
+		NormalFloat = { bg = colors.black },
 
 		-- Defaults
 		Normal = { fg = colors.base05, bg = colors.black },

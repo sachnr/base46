@@ -1,9 +1,11 @@
 local generate_gradient = require("base46.utils.color").compute_gradient
 local hls = function(colors)
-	local gradient = generate_gradient(colors.blue, colors.orange, 20)
+	local gradient = generate_gradient(colors.base02, colors.base03, 20)
 	local table = {
 		AlphaHeader = { fg = colors.grey_fg },
 		AlphaButtons = { fg = colors.light_grey },
+		AlphaTitle = { fg = colors.red, bold = true },
+		AlphaFolder = { fg = colors.folder_bg, bold = true },
 
 		-- glepnir/dashboard-nvim
 		DashboardHeader = { fg = colors.blue },

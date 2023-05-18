@@ -57,6 +57,30 @@ M.base_16 = {
 
 M.polish_hl = {
 	FloatBorder = { fg = M.base_16.base03 },
+	Operator = { fg = M.base_16.base09 },
+	["@operator"] = { fg = M.base_16.base04 },
+	Variable = { fg = M.base_16.base07 },
+	["@field"] = { fg = M.base_16.base07 },
+	["@variable"] = { fg = M.base_16.base07 },
+	["@variable.builtin"] = { fg = M.base_16.base0E },
+	Keyword = { fg = M.base_16.base08 },
+	["@keyword"] = { fg = M.base_16.base08 },
+	["@keyword.function"] = { fg = M.base_16.base08 },
+	["@keyword.operator"] = { fg = M.base_16.base09 },
+	["@keyword.return"] = { fg = M.base_16.base08 },
+	["@method"] = { fg = M.base_16.base0A },
+	["@method.call"] = { fg = M.base_16.base0A },
+	["@punctuation.bracket"] = { fg = M.base_16.base07 },
+	["@conditional"] = { fg = M.base_16.base08 },
+	["@function"] = { fg = M.base_16.base0A },
+	["@function.call"] = { fg = M.base_16.base0A },
+	["@storageclass"] = { fg = M.base_16.base09 },
+	["@type"] = { fg = M.base_16.base07 },
+	["@type.qualifier"] = { fg = M.base_16.base08 },
+	["@type.builtin"] = { fg = M.base_16.base0A },
+	["@include"] = { fg = M.base_16.base08 },
+	["@namespace"] = { fg = M.base_16.base07 },
+	["Macro"] = { fg = M.base_16.base08 },
 }
 
 return M

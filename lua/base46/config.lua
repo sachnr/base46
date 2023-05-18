@@ -10,6 +10,7 @@ local defaults = {
 	strikethrough = true,
 	underline = true,
 	simple_lualine = false,
+	bold_vertsplit = false,
 }
 
 M.setup = function(user_opts)
